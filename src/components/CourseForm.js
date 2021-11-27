@@ -85,7 +85,7 @@ const CourseForm = (props) => {
           />
         </Form.Group>
         <Form.Group controlId="teacher">
-          <Form.Label>Teacherr</Form.Label>
+          <Form.Label>Teacher</Form.Label>
           <Form.Control
             className="input-control"
             type="text"
