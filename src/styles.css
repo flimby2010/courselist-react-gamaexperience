@@ -1,0 +1,159 @@
+body {
+  background: #ececec;
+  font-family: Noto Sans, Helvetica, sans-serif;
+  color: #385170;
+  letter-spacing: 1px;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+links {
+  text-align: center;
+  font-size: 100%;
+  margin-bottom: 20px;
+  color: #385170;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: 100;
+  margin: 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.link.hover {
+  border-bottom: 2px solid #fff;
+}
+
+h1 {
+  display: inline-block;
+}
+
+h1,
+h2 {
+  color: #9fd3c7;
+}
+
+.main-content {
+  width: 80%;
+  margin: auto auto 100px auto;
+}
+
+.main {
+  margin-left: 10px;
+}
+
+.form {
+  width: 30%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.course {
+  margin: 10px;
+  width: 288px;
+  overflow: hidden;
+  background-color: #9fd3c7;
+}
+
+.course-title {
+  font-weight: bold;
+}
+
+.course-details {
+  margin-bottom: 1rem;
+}
+
+.main-form {
+  color: #142d4c;
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+}
+
+.input-control {
+  border: 1px solid #ccc;
+  color: #385170;
+  background-color: #fff;
+  height: 30px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 0;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+}
+
+.login {
+  text-align: center;
+  padding: 10px;
+  height: 200px;
+  line-height: 200px;
+}
+
+button {
+  font-size: 20px;
+  color: #385170;
+}
+
+.errorMsg {
+  color: #f21e08;
+  background: #fff0f0;
+  padding: 10px;
+}
+
+.successMsg {
+  color: #00ff00;
+  background: #077707;
+  padding: 10px;
+}
+
+.centered-message {
+  width: 500px;
+  margin: auto;
+}
+
+.message {
+  color: #385170;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .links {
+    font-size: 1.2rem;
+  }
+
+  .link:link,
+  .link:visited {
+    margin: unset;
+  }
+
+  .main-form {
+    width: 100%;
+  }
+}
