@@ -4,9 +4,13 @@
   --third-color: #475053;
   --fourth-color: #2e94b9;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --font-family: "Urbanist", sans-serif;
+  --font-family: "Roboto", sans-serif;
 }
 
+.Index {
+  max-width: 800px;
+  margin: 60px auto;
+}
 
 body {
   background: var(--primary-color);
@@ -121,16 +125,35 @@ h2 {
   padding: 10px;
   width: 100%;
 }
-
 button {
-background-color: var(--third-color);
-color: var(--fourth-color);
-border: 1px solid var(--primary-color);
-border-color:var(--secondary-color);
-border-radius:3px;
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  display: inline;
   font-size: 16px;
-  line-height:20px;
-  padding: 10px 30px;}
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 15%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+
+
+
+
+.button:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
 
 .errorMsg {
   color: #f21e08;
@@ -155,7 +178,7 @@ border-radius:3px;
   margin-left: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width:800px) {
   h1 {
     font-size: 30px;
   }
@@ -171,5 +194,10 @@ border-radius:3px;
 
   .main-form {
     width: 100%;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size:10px;
   }
 }

@@ -15,9 +15,10 @@ const Course = ({
   const history = useHistory();
 
   return (
-<Card style={{ width: '60rem' }} className="course">
+<Card style={{ width: '40rem' }} className="course">
 <Card.Body>
      <Card.Title className="course-title">{coursename}</Card.Title>
+     <br/>
         <div className="course-details">
           <div> Teacher: {teacher}</div>
           <div> Description: {description} </div>
@@ -27,7 +28,7 @@ const Course = ({
         </div>
         <br/>
        
-        <Button variant="secondary" onClick={() => history.push(`/edit/${id}`)}>
+        <Button variant="secondary" size= "sm" onClick={() => history.push(`/edit/${id}`)}>
           Edit
         </Button>{" "} 
        
