@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 
+
+
 const CourseForm = (props) => {
   const [course, setCourse] = useState({
     coursename: props.course ? props.course.coursename : "",
@@ -52,15 +54,9 @@ const CourseForm = (props) => {
             [name]: value,
           }));
         }
-        break;
-      case "price":
-        if (value === "" || value.match(/^\d{1,}(\.\d{0,2})?$/)) {
-          setCourse((prevState) => ({
-            ...prevState,
-            [name]: value,
-          }));
-        }
-        break;
+      
+       
+    break;
       default:
         setCourse((prevState) => ({
           ...prevState,
@@ -128,9 +124,11 @@ const CourseForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit" className="submit-btn">
+        <div className="formbtn">
+        <Button variant="contained" color= "primary"type="submit" className="submit-btn">
           Submit
         </Button>
+        </div>
       </Form>
     </div>
   );

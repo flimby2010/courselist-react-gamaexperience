@@ -5,12 +5,12 @@ const Header = () => {
   return (
     <header>
       <h1>FINANCE UNIVERSITY PROGRAMS </h1>
-      <hr />
+      <br />
       <div className="links">
-        <NavLink to="/" className="link" activeClassName="active" exact>
+        <NavLink to="/" className="course-link" activeClassName="active" >
           Course List |
         </NavLink>
-        <NavLink to="/add" className="link" activeClassName="active">
+        <NavLink to="/add" className="add-link" activeClassName="active">
           Add Course
         </NavLink>
       </div>
